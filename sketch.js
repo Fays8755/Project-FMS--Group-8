@@ -4,6 +4,6 @@ function setup() {
 
 function draw() {
   background(220);
-  fill('blue');
+  fill('red');
   rect(50, 50, 50, 50);
 }
