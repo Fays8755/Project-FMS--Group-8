@@ -28,4 +28,6 @@ function draw() {
   fill('red');
   rect(50, 300, 70, 50);
   
+  fill('gray');
+  circle(250, 325, 70, 10);
 }
