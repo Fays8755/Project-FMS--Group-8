@@ -33,7 +33,13 @@ function draw() {
 
   fill('black');
   textFont("Comic Sans MS");
-  text("FSE GUI", 575, 95);
   textSize(32);
+  text("FMS Development", 500, 95);
+
+  textFont("ABeeZee");
+  textSize(50);
+  text("Game #1", 110, 265);
+  text("Game #2", 550, 265);
+  text("Game #3", 990, 265);
 }
 
