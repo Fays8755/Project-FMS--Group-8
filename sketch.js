@@ -30,4 +30,10 @@ function draw() {
   
   fill('gray');
   ellipse(750, 500, 140, 70);
+
+  fill('black');
+  textFont("Comic Sans MS");
+  text("FSE GUI", 575, 95);
+  textSize(32);
 }
+
