@@ -5,29 +5,29 @@ function setup() {
 function draw() {
     background('pink');
   fill('gray');
-  rect(200, 100, 1070, 100);
+  rect(50, 50, 1180, 70, 20);
 
   fill('yellow');
-  rect(50, 150, 70, 50);
+  rect(50, 150, 300, 200, 20);
 
   fill('yellow');
-  rect(150, 150, 70, 50);
+  rect(490, 150, 300, 200, 20);
 
   fill('yellow');
-  rect(1050, 325, 100, 100, 20);
+  rect(930, 150, 300, 200, 20);
 
   fill('orange');
-  circle(50, 200, 30, 30);
+  circle(50, 350, 75, 30);
 
   fill('orange');
-  circle(150, 200, 30, 30);
+  circle(490, 350, 75, 30);
 
   fill('orange');
-  circle(250, 200, 30, 30);
+  circle(930, 350, 75, 30);
   
   fill('red');
-  rect(200, 575, 70, 50);
+  rect(450, 450, 150, 100, 20);
   
   fill('gray');
-  circle(1250, 600, 70, 10);
+  ellipse(750, 500, 140, 70);
 }
