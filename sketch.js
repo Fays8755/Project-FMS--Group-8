@@ -32,7 +32,7 @@ function draw() {
   ellipse(750, 500, 140, 70);
 
   fill('black');
-  textFont("Comic Sans MS");
+  textFont("ABeeZee");
   textSize(32);
   text("FMS Development", 500, 95);
 
