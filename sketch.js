@@ -41,5 +41,8 @@ function draw() {
   text("Game #1", 110, 265);
   text("Game #2", 550, 265);
   text("Game #3", 990, 265);
+
+
+  arc(50,50, 50, 50, 0, HALF_PI);
 }
 
