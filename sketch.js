@@ -26,8 +26,12 @@ function draw() {
   circle(930, 350, 75, 30);
   
   fill('red');
-  rect(450, 450, 150, 100, 20);
+  rect(50, 450, 150, 100, 20);
+
+  fill('black');
+  text
+  text("Welcome!", 540, 490);
   
   fill('gray');
-  ellipse(750, 500, 140, 70);
+  ellipse(1150, 500, 140, 70);
 }
