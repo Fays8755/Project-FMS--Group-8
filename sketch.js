@@ -26,8 +26,8 @@ function draw() {
   circle(250, 200, 30, 30);
   
   fill('red');
-  rect(50, 300, 70, 50);
+  rect(140, 575, 70, 50);
   
   fill('gray');
-  circle(250, 325, 70, 10);
+  circle(1250, 600, 70, 10);
 }
