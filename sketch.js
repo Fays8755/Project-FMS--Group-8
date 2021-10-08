@@ -43,6 +43,7 @@ function draw() {
   text("Game #3", 990, 265);
 
 
-  arc(50,50, 50, 50, 0, HALF_PI);
+  arc(1155, 575, 50, 50, PI + HALF_PI + QUARTER_PI, QUARTER_PI);
+  arc(1150, 575, 50, 50, QUARTER_PI, HALF_PI + QUARTER_PI);
 }
 
