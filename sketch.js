@@ -45,10 +45,10 @@ function draw() {
   arc(1070, 575, 50, 50, 0, PI);
 
   fill('gray');
-  arc(1100, 573 , 60, 60, QUARTER_PI, HALF_PI + QUARTER_PI);
-
-  fill('gray');
   arc(1130, 575, 50, 50, 0, PI);
+  
+  fill('gray');
+  arc(1100, 573 , 60, 60, QUARTER_PI, HALF_PI + QUARTER_PI);
   
   //Left clouds
   arc(1040, 550, 45, 45, HALF_PI, PI + HALF_PI + QUARTER_PI);
@@ -56,8 +56,8 @@ function draw() {
   
   //Up clouds
   arc(1070, 545, 50, 50, PI, 0);
-  arc(1100, 545, 60, 60, PI + QUARTER_PI, PI + QUARTER_PI + HALF_PI);
   arc(1130, 545, 50, 50, PI, 0);
+  arc(1100, 545, 60, 60, PI + QUARTER_PI, PI + QUARTER_PI + HALF_PI);
   
   //Right clouds
   arc(1160, 545, 45, 45, PI + QUARTER_PI, HALF_PI);
