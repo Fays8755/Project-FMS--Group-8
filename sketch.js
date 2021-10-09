@@ -43,11 +43,7 @@ function draw() {
   fill('gray');
   stroke('black');
   arc(1070, 575, 50, 50, 0, PI);
-
-  fill('gray');
   arc(1130, 575, 50, 50, 0, PI);
-  
-  fill('gray');
   arc(1100, 573 , 60, 60, QUARTER_PI, HALF_PI + QUARTER_PI);
   
   //Left clouds
