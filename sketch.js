@@ -61,5 +61,10 @@ function draw() {
   
   stroke('gray');
   rect(1040, 540, 120, 38);
+
+  textFont("ABeeZee");
+  fill('black');
+  textSize(30);
+  text("Settings", 1050, 565);
 }
 
