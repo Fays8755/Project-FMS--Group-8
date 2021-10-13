@@ -64,7 +64,7 @@ function draw() {
 
   textFont("ABeeZee");
   fill('black');
-  textSize(30);
+  textSize(32);
   text("Settings", 1050, 565);
 }
 
