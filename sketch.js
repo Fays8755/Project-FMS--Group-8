@@ -28,12 +28,9 @@ function draw() {
   
   fill('red');
   rect(450, 450, 150, 100, 20);
-  
-  fill('gray');
-  ellipse(750, 500, 140, 70);
 
   fill('black');
-  textFont("Comic Sans MS");
+  textFont("ABeeZee");
   textSize(32);
   text("FMS Development", 500, 95);
 
@@ -42,6 +39,34 @@ function draw() {
   text("Game #1", 110, 265);
   text("Game #2", 550, 265);
   text("Game #3", 990, 265);
+
+  //Down cloud
+  fill('gray');
+  stroke('black');
+  arc(1070, 575, 50, 50, 0, PI);
+  arc(1130, 575, 50, 50, 0, PI);
+  arc(1100, 573 , 60, 60, QUARTER_PI, HALF_PI + QUARTER_PI);
+  
+  //Left clouds
+  arc(1040, 550, 45, 45, HALF_PI, PI + HALF_PI + QUARTER_PI);
+  arc(1040, 570, 45, 45, 0, PI + QUARTER_PI);
+  
+  //Up clouds
+  arc(1070, 545, 50, 50, PI, 0);
+  arc(1130, 545, 50, 50, PI, 0);
+  arc(1100, 545, 60, 60, PI + QUARTER_PI, PI + QUARTER_PI + HALF_PI);
+  
+  //Right clouds
+  arc(1160, 545, 45, 45, PI + QUARTER_PI, HALF_PI);
+  arc(1160, 565, 45, 45, PI + HALF_PI + QUARTER_PI, HALF_PI + QUARTER_PI)
+  
+  stroke('gray');
+  rect(1040, 540, 120, 38);
+
+  textFont("ABeeZee");
+  fill('black');
+  textSize(32);
+  text("Settings", 1050, 565);
 
   textSize(20);
   text("High", 30, 345);
