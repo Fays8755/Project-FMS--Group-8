@@ -2,6 +2,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
+// GUI Main Menu
 function draw() {
     background('pink');
   fill('gray');
@@ -66,5 +67,19 @@ function draw() {
   fill('black');
   textSize(32);
   text("Settings", 1050, 565);
-}
 
+  textSize(20);
+  text("High", 30, 345);
+  textSize(22);
+  text("Score", 27, 365);
+
+  textSize(20);
+  text("High", 470, 345);
+  textSize(22);
+  text("Score", 467, 365);
+
+  textSize(20);
+  text("High", 910, 345);
+  textSize(22);
+  text("Score", 907, 365);
+}
