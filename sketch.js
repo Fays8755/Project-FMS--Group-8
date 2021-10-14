@@ -2,6 +2,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
+// GUI Main Menu
 function draw() {
     background('pink');
   fill('gray');
@@ -43,3 +44,7 @@ function draw() {
   text("Game #3", 990, 265);
 }
 
+// Settings
+function draw() {
+
+}
