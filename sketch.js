@@ -2,9 +2,9 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
-// GUI Main Menu
-function draw() {
-    background('pink');
+function mainMenu()
+{
+  background('pink');
   fill('gray');
   rect(50, 50, 1180, 70, 20);
 
@@ -40,34 +40,14 @@ function draw() {
   text("Game #2", 550, 265);
   text("Game #3", 990, 265);
 
-  //Down cloud
   fill('gray');
-  stroke('black');
-  arc(1070, 575, 50, 50, 0, PI);
-  arc(1130, 575, 50, 50, 0, PI);
-  arc(1100, 573 , 60, 60, QUARTER_PI, HALF_PI + QUARTER_PI);
-  
-  //Left clouds
-  arc(1040, 550, 45, 45, HALF_PI, PI + HALF_PI + QUARTER_PI);
-  arc(1040, 570, 45, 45, 0, PI + QUARTER_PI);
-  
-  //Up clouds
-  arc(1070, 545, 50, 50, PI, 0);
-  arc(1130, 545, 50, 50, PI, 0);
-  arc(1100, 545, 60, 60, PI + QUARTER_PI, PI + QUARTER_PI + HALF_PI);
-  
-  //Right clouds
-  arc(1160, 545, 45, 45, PI + QUARTER_PI, HALF_PI);
-  arc(1160, 565, 45, 45, PI + HALF_PI + QUARTER_PI, HALF_PI + QUARTER_PI)
-  
-  stroke('gray');
-  rect(1040, 540, 120, 38);
+  circle(1100, 555, 120, 70);
 
   textFont("ABeeZee");
   fill('black');
   textSize(32);
   text("Settings", 1050, 565);
-
+    
   textSize(20);
   text("High", 30, 345);
   textSize(22);
@@ -82,4 +62,75 @@ function draw() {
   text("High", 910, 345);
   textSize(22);
   text("Score", 907, 365);
+
+
+}
+
+let state = "mainMenu";
+
+function draw() {
+  if (state == "mainMenu") { mainMenu(); }
+  else if (state == "game1") { game1() }
+  else if (state == "game2") { game2() }
+  else if (state == "game3") { game3() }
+  else if (state == "settings") { settings()}
+  else { background(255); text("HI SUMIT", 500, 500);}
+}
+
+function game1() {
+  background('blue');
+}
+
+function game2() {
+  background('green');
+}
+
+function game3() {
+  background('black');
+}
+
+function settings() {
+  background('white');
+}
+
+function mousePressed()
+{
+  if (state == "mainMenu") {
+    let d = dist(mouseX, mouseY, 1100, 555);
+    if (mouseX > 50 && mouseX < 350 && mouseY > 150 && mouseY < 350) {
+      state = "game1";
+    }
+    else if (mouseX > 490 && mouseX < 790 && mouseY > 150 && mouseY < 350) {
+      state = "game2";
+    }
+    else if (mouseX > 930 && mouseX < 1230 && mouseY > 150 && mouseY < 350) {
+      state = "game3";
+    }
+    else if (d<60) {
+      if (d<60) {
+        state = "settings";
+      }
+    }
+    //else if ()
+  }
+
+  else if (state == "game1") {
+    // back button code 
+    state = "mainMenu";
+  }
+
+  else if (state == "game2") {
+    // back button code 
+    state = "mainMenu";
+  }
+
+  else if (state == "game3") {
+    // back button code 
+    state = "mainMenu";
+  }
+
+  else if (state == "settings") {
+    // back button code 
+    state = "mainMenu";
+  }
 }
