@@ -10,19 +10,15 @@ function mainMenu()
 
   fill('yellow');
   rect(50, 150, 300, 200, 20);
-
   fill('yellow');
   rect(490, 150, 300, 200, 20);
-
   fill('yellow');
   rect(930, 150, 300, 200, 20);
 
   fill('orange');
   circle(50, 350, 75, 30);
-
   fill('orange');
   circle(490, 350, 75, 30);
-
   fill('orange');
   circle(930, 350, 75, 30);
   
@@ -34,7 +30,6 @@ function mainMenu()
   textSize(32);
   text("FMS Development", 500, 95);
 
-  textFont("ABeeZee");
   textSize(50);
   text("Game #1", 110, 265);
   text("Game #2", 550, 265);
@@ -43,7 +38,6 @@ function mainMenu()
   fill('gray');
   circle(1100, 555, 120, 70);
 
-  textFont("ABeeZee");
   fill('black');
   textSize(32);
   text("Settings", 1050, 565);
@@ -62,8 +56,6 @@ function mainMenu()
   text("High", 910, 345);
   textSize(22);
   text("Score", 907, 365);
-
-
 }
 
 let state = "mainMenu";
@@ -74,27 +66,64 @@ function draw() {
   else if (state == "game2") { game2() }
   else if (state == "game3") { game3() }
   else if (state == "settings") { settings()}
-  else { background(255); text("HI SUMIT", 500, 500);}
+  else { background(255); text("ERROE OUCCURRED", 500, 500);}
 }
 
 function game1() {
   background('blue');
+
+  fill('gray');
+  rect(20, 20, 100, 70, 20);
+  textFont("ABeeZee");
+  fill('black');
+  textSize(26);
+  text("Main", 44, 51);
+  textSize(28);
+  text("Menu", 38, 75);
 }
 
 function game2() {
   background('green');
+
+  fill('gray');
+  rect(20, 20, 100, 70, 20);
+  textFont("ABeeZee");
+  fill('black');
+  textSize(26);
+  text("Main", 44, 51);
+  textSize(28);
+  text("Menu", 38, 75);
 }
 
 function game3() {
   background('black');
+
+  fill('gray');
+  rect(20, 20, 100, 70, 20);
+  textFont("ABeeZee");
+  fill('black');
+  textSize(26);
+  text("Main", 44, 51);
+  textSize(28);
+  text("Menu", 38, 75);
 }
 
 function settings() {
   background('white');
+
+  fill('gray');
+  rect(20, 20, 100, 70, 20);
+  textFont("ABeeZee");
+  fill('black');
+  textSize(26);
+  text("Main", 44, 51);
+  textSize(28);
+  text("Menu", 38, 75);
 }
 
 function mousePressed()
 {
+  //Main page
   if (state == "mainMenu") {
     let d = dist(mouseX, mouseY, 1100, 555);
     if (mouseX > 50 && mouseX < 350 && mouseY > 150 && mouseY < 350) {
@@ -111,26 +140,33 @@ function mousePressed()
         state = "settings";
       }
     }
-    //else if ()
   }
 
+  //Game 1 Page
   else if (state == "game1") {
-    // back button code 
-    state = "mainMenu";
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {
+      state = "mainMenu";
+    }
   }
 
+  //Game 2 page
   else if (state == "game2") {
-    // back button code 
-    state = "mainMenu";
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {
+      state = "mainMenu";
+    }
   }
 
+  //Game 3 page
   else if (state == "game3") {
-    // back button code 
-    state = "mainMenu";
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {
+      state = "mainMenu";
+    }
   }
 
+  //Settings page
   else if (state == "settings") {
-    // back button code 
-    state = "mainMenu";
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {
+      state = "mainMenu";
+    }
   }
 }
