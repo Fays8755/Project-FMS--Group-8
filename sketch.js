@@ -79,8 +79,8 @@ function mainMenuButton() {
   rect(20, 20, 100, 70, 20);
   textFont("ABeeZee");
   fill('black');
-  textSize(26);
-  text("Main", 44, 51);
+  textSize(28);
+  text("Main", 40, 51);
   textSize(28);
   text("Menu", 38, 75);
 }
@@ -110,6 +110,9 @@ function game2() {
 
   //Main menu button
   mainMenuButton();
+  fill('white');
+  strokeWeight(3);
+  rect(300, 80, 660, 70, 20);
 }
 
 function game3() {
