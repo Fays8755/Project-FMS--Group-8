@@ -89,7 +89,7 @@ function mainMenuButton() {
   text("Menu", 38, 75);
 }
 
-let state = "game3";
+let state = "mainMenu";
 
 function draw() {
   if (state == "mainMenu") { mainMenu(); }
@@ -108,6 +108,14 @@ function game1() {
 
   //Main menu button
   mainMenuButton();
+
+  fill('#BBF291');
+  rect(270, 120, 700, 60, 20);
+
+  textFont('ABeeZee');
+  fill('black');
+  textSize(32);
+  text("Type the following sentence:", 440, 160);
 }
 
 function game2() {
@@ -115,9 +123,14 @@ function game2() {
 
   //Main menu button
   mainMenuButton();
-  fill('white');
-  strokeWeight(3);
-  rect(300, 80, 660, 70, 20);
+  
+  fill('#BBF291');
+  rect(270, 120, 700, 60, 20);
+
+  textFont('ABeeZee');
+  fill('black');
+  textSize(32);
+  text("React accordingly to the following images:", 350, 160);
 }
 
 function game3() {
