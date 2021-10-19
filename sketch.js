@@ -89,7 +89,7 @@ function mainMenuButton() {
   text("Menu", 38, 75);
 }
 
-let state = "mainMenu";
+let state = "game3";
 
 function draw() {
   if (state == "mainMenu") { mainMenu(); }
@@ -122,6 +122,16 @@ function game3() {
 
   //Main menu button
   mainMenuButton();
+  
+  fill('#BBF291');
+  rect(270, 120, 700, 60, 20);
+
+  textFont('ABeeZee');
+  fill('black');
+  textSize(32);
+  text("Trace the following image:", 440, 160);
+
+  
 }
 
 function settings() {
