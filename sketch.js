@@ -6,7 +6,9 @@ function mainMenu()
 {
   background('pink');
   
+  //Heading
   fill('gray');
+  strokeWeight(1);
   rect(50, 50, 1180, 70, 20);
   fill('black');
   textFont("ABeeZee");
@@ -49,9 +51,19 @@ function mainMenu()
   textSize(22);
   text("Score", 907, 365);
   
-  fill('red');
-  rect(450, 450, 150, 100, 20);
-  
+  //About button
+  fill('CornSilk');
+  rect(90, 500, 175, 100, 20);
+
+  //Registration button
+  fill('Violet');
+  rect(535, 450, 175, 100);
+
+  fill('black');
+  textSize(32);
+  text("Login/", 575, 490);
+  text("Registration", 545, 530);
+
   //Settings button
   fill('gray');
   circle(1100, 555, 120, 70);
@@ -69,14 +81,17 @@ function draw() {
   else if (state == "game2") { game2() }
   else if (state == "game3") { game3() }
   else if (state == "settings") { settings()}
-  else { background(255); text("ERROE OUCCURRED", 500, 500);}
+  else if (state == "login") {login()}
+  else if (state == "registration") {registration()}
+  else { background(255); text("ERROR OUCCURRED", 500, 500);}
 }
 
 function game1() {
-  background('blue');
+  background('pink');
 
   //Main menu button
-  fill('gray');
+  fill('lemonChiffon');
+  strokeWeight(1);
   rect(20, 20, 100, 70, 20);
   textFont("ABeeZee");
   fill('black');
@@ -87,10 +102,11 @@ function game1() {
 }
 
 function game2() {
-  background('green');
+  background('pink');
 
   //Main menu button
-  fill('gray');
+  fill('lemonChiffon');
+  strokeWeight(1);
   rect(20, 20, 100, 70, 20);
   textFont("ABeeZee");
   fill('black');
@@ -101,10 +117,11 @@ function game2() {
 }
 
 function game3() {
-  background('black');
+  background('pink');
 
   //Main menu button
-  fill('gray');
+  fill('lemonChiffon');
+  strokeWeight(1);
   rect(20, 20, 100, 70, 20);
   textFont("ABeeZee");
   fill('black');
@@ -115,10 +132,11 @@ function game3() {
 }
 
 function settings() {
-  background('white');
+  background('pink');
 
   //Main menu button
-  fill('gray');
+  fill('lemonChiffon');
+  strokeWeight(1);
   rect(20, 20, 100, 70, 20);
   textFont("ABeeZee");
   fill('black');
@@ -128,53 +146,185 @@ function settings() {
   text("Menu", 38, 75);
 }
 
+function login() {
+  background('pink');
+
+  //Main menu button
+  fill('lemonChiffon');
+  strokeWeight(1);
+  rect(20, 20, 100, 70, 20);
+  textFont("ABeeZee");
+  fill('black');
+  textSize(26);
+  text("Main", 44, 51);
+  textSize(28);
+  text("Menu", 38, 75);
+
+  //Login Heading
+  fill('SandyBrown');
+  rect(300, 80, 660, 70, 20);
+  textSize(40);
+  fill('black');
+  text("Login", 580, 127);
+
+  //Username
+  fill('SandyBrown');
+  rect(360, 220, 130, 50);
+  textSize(35);
+  fill('black');
+  text("User:", 385, 256);
+  fill('white');
+  rect(560, 220, 330, 50);
+
+  //Password
+  fill('SandyBrown');
+  rect(360, 310, 130, 50);
+  textSize(35);
+  fill('black');
+  text("Pass:", 385, 346);
+  fill('white');
+  rect(560, 310, 330, 50);
+
+  //Login button
+  fill('SandyBrown');
+  rect(560, 410, 100, 30);
+  fill('black');
+  textSize(25);
+  text("Login", 580, 433);
+
+  //Registration text
+  fill('black');
+  textSize(35);
+  text("Not Registered?", 500, 520);
+  fill('pink');
+  strokeWeight(0);
+  rect(450, 550, 320, 35)
+  fill('black');
+  textSize(43);
+  text("Create an account!", 450, 580);
+  strokeWeight(2);
+  line(455, 584, 767, 584);
+}
+
+function registration() {
+  background('pink');
+
+  //Main menu button
+  fill('lemonChiffon');
+  strokeWeight(1);
+  rect(20, 20, 100, 70, 20);
+  textFont("ABeeZee");
+  fill('black');
+  textSize(26);
+  text("Main", 44, 51);
+  textSize(28);
+  text("Menu", 38, 75);
+
+  //Registration heading
+  fill('SandyBrown');
+  rect(300, 40, 660, 70, 20);
+  textSize(40);
+  fill('black');
+  text("Registration", 530, 87);
+
+  //Email
+  fill('SandyBrown');
+  rect(360, 160, 130, 50);
+  textSize(35);
+  fill('black');
+  text("Email:", 375, 196);
+  fill('white');
+  rect(560, 160, 330, 50);
+
+  //Username
+  fill('SandyBrown');
+  rect(360, 260, 130, 50);
+  textSize(35);
+  fill('black');
+  text("User:", 385, 296);
+  fill('white');
+  rect(560, 260, 330, 50);
+
+  //Password
+  fill('SandyBrown');
+  rect(360, 360, 130, 50);
+  textSize(35);
+  fill('black');
+  text("Pass:", 385, 396);
+  fill('white');
+  rect(560, 360, 330, 50);
+
+  //Re-enter Password
+  fill('SandyBrown');
+  rect(360, 460, 130, 50);
+  textSize(21);
+  fill('black');
+  text("Re-enter Pass:", 367, 493);
+  fill('white');
+  rect(560, 460, 330, 50);
+
+  //Finish button
+  fill('SandyBrown');
+  rect(550, 560, 100, 30);
+  fill('black');
+  textSize(25);
+  text("Finish", 570, 583);
+}
 
 function mousePressed()
 {
   //Main page
   if (state == "mainMenu") {
     let d = dist(mouseX, mouseY, 1100, 555);
-    if (mouseX > 50 && mouseX < 350 && mouseY > 150 && mouseY < 350) {
-      state = "game1";
-    }
-    else if (mouseX > 490 && mouseX < 790 && mouseY > 150 && mouseY < 350) {
-      state = "game2";
-    }
-    else if (mouseX > 930 && mouseX < 1230 && mouseY > 150 && mouseY < 350) {
-      state = "game3";
-    }
+    //Going to Game#1 page
+    if (mouseX > 50 && mouseX < 350 && mouseY > 150 && mouseY < 350) {state = "game1";}
+    //Going to Game#2 page
+    else if (mouseX > 490 && mouseX < 790 && mouseY > 150 && mouseY < 350) {state = "game2";}
+    //Going to Game#3 page
+    else if (mouseX > 930 && mouseX < 1230 && mouseY > 150 && mouseY < 350) {state = "game3";}
+    //Going to settings page
     else if (d<60) {
-      if (d<60) {
-        state = "settings";
-      }
+      if (d<60) {state = "settings";}
     }
+    //Going to login page 535, 450, 175, 100
+    else if (mouseX > 535 && mouseX < 710 && mouseY > 450 && mouseY < 550) {state = "login";}
   }
 
   //Game 1 Page
   else if (state == "game1") {
-    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {
-      state = "mainMenu";
-    }
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
   }
 
   //Game 2 page
   else if (state == "game2") {
-    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {
-      state = "mainMenu";
-    }
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
   }
 
   //Game 3 page
   else if (state == "game3") {
-    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {
-      state = "mainMenu";
-    }
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
   }
 
   //Settings page
   else if (state == "settings") {
-    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {
-      state = "mainMenu";
-    }
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+  }
+
+  //Login page
+  else if (state == "login") {
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+    //Going to the registration page
+    if (mouseX > 450 && mouseX < 770 && mouseY > 550 && mouseY < 585) {state = "registration"}
+  }
+
+  //registration page
+  else if (state == "registration") {
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
   }
 }
