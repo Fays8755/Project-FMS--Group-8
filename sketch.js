@@ -116,6 +116,14 @@ function game1() {
   fill('black');
   textSize(32);
   text("Type the following sentence:", 440, 160);
+
+  fill('#BBF291');
+  rect(320, 240, 600, 60, 20);
+
+  textFont('ABeeZee');
+  fill('black');
+  textSize(32);
+  text("(Sentence PlaceHolder)", 460, 280);
 }
 
 function game2() {
@@ -131,6 +139,15 @@ function game2() {
   fill('black');
   textSize(32);
   text("React accordingly to the following images:", 350, 160);
+
+  fill('#BBF291');
+  rect(500, 240, 220, 220, 20);
+
+  textFont('ABeeZee');
+  fill('black');
+  textSize(32);
+  text("(Image", 550, 330);
+  text("PlaceHolder)", 530, 370);
 }
 
 function game3() {
@@ -147,7 +164,14 @@ function game3() {
   textSize(32);
   text("Trace the following image:", 440, 160);
 
-  
+  fill('#BBF291');
+  rect(500, 240, 220, 220, 20);
+
+  textFont('ABeeZee');
+  fill('black');
+  textSize(32);
+  text("(Image", 550, 330);
+  text("PlaceHolder)", 530, 370);
 }
 
 function settings() {
