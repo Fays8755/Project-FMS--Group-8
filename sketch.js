@@ -25,9 +25,9 @@ function mainMenu()
 
   textSize(50);
   fill('black');
-  text("Game #1", 110, 265);
-  text("Game #2", 550, 265);
-  text("Game #3", 990, 265);
+  text("Typing", 130, 265);
+  text("React", 580, 265);
+  text("Trace", 1020, 265);
 
   //High score
   fill('orange');
@@ -55,9 +55,13 @@ function mainMenu()
   fill('CornSilk');
   rect(90, 500, 175, 100, 20);
 
+  fill('black');
+  textSize(32);
+  text("About", 135, 560);
+
   //Registration button
   fill('Violet');
-  rect(535, 450, 175, 100);
+  rect(535, 450, 175, 100, 20);
 
   fill('black');
   textSize(32);
@@ -95,6 +99,7 @@ function draw() {
   else if (state == "settings") { settings()}
   else if (state == "login") {login()}
   else if (state == "registration") {registration()}
+  else if (state == "about") {about()}
   else { background(255); text("ERROR OUCCURRED", 500, 500);}
 }
 
@@ -238,6 +243,13 @@ function registration() {
   text("Finish", 570, 583);
 }
 
+function about() 
+{
+  background('pink');
+  //main menu button
+  mainMenuButton();
+}
+
 function mousePressed()
 {
   //Main page
@@ -255,6 +267,8 @@ function mousePressed()
     }
     //Going to login page 535, 450, 175, 100
     else if (mouseX > 535 && mouseX < 710 && mouseY > 450 && mouseY < 550) {state = "login";}
+    //Going to about page
+    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {state = "about"}
   }
 
   //Game 1 Page
@@ -291,6 +305,12 @@ function mousePressed()
 
   //registration page
   else if (state == "registration") {
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+  }
+
+  //about page
+  else if (state == "about") {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
   }
