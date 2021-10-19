@@ -73,6 +73,18 @@ function mainMenu()
   text("Settings", 1050, 565);
 }
 
+function mainMenuButton() {
+  fill('lemonChiffon');
+  strokeWeight(1);
+  rect(20, 20, 100, 70, 20);
+  textFont("ABeeZee");
+  fill('black');
+  textSize(26);
+  text("Main", 44, 51);
+  textSize(28);
+  text("Menu", 38, 75);
+}
+
 let state = "mainMenu";
 
 function draw() {
@@ -90,75 +102,35 @@ function game1() {
   background('pink');
 
   //Main menu button
-  fill('lemonChiffon');
-  strokeWeight(1);
-  rect(20, 20, 100, 70, 20);
-  textFont("ABeeZee");
-  fill('black');
-  textSize(26);
-  text("Main", 44, 51);
-  textSize(28);
-  text("Menu", 38, 75);
+  mainMenuButton();
 }
 
 function game2() {
   background('pink');
 
   //Main menu button
-  fill('lemonChiffon');
-  strokeWeight(1);
-  rect(20, 20, 100, 70, 20);
-  textFont("ABeeZee");
-  fill('black');
-  textSize(26);
-  text("Main", 44, 51);
-  textSize(28);
-  text("Menu", 38, 75);
+  mainMenuButton();
 }
 
 function game3() {
   background('pink');
 
   //Main menu button
-  fill('lemonChiffon');
-  strokeWeight(1);
-  rect(20, 20, 100, 70, 20);
-  textFont("ABeeZee");
-  fill('black');
-  textSize(26);
-  text("Main", 44, 51);
-  textSize(28);
-  text("Menu", 38, 75);
+  mainMenuButton();
 }
 
 function settings() {
   background('pink');
 
   //Main menu button
-  fill('lemonChiffon');
-  strokeWeight(1);
-  rect(20, 20, 100, 70, 20);
-  textFont("ABeeZee");
-  fill('black');
-  textSize(26);
-  text("Main", 44, 51);
-  textSize(28);
-  text("Menu", 38, 75);
+  mainMenuButton();
 }
 
 function login() {
   background('pink');
 
   //Main menu button
-  fill('lemonChiffon');
-  strokeWeight(1);
-  rect(20, 20, 100, 70, 20);
-  textFont("ABeeZee");
-  fill('black');
-  textSize(26);
-  text("Main", 44, 51);
-  textSize(28);
-  text("Menu", 38, 75);
+  mainMenuButton();
 
   //Login Heading
   fill('SandyBrown');
@@ -210,15 +182,7 @@ function registration() {
   background('pink');
 
   //Main menu button
-  fill('lemonChiffon');
-  strokeWeight(1);
-  rect(20, 20, 100, 70, 20);
-  textFont("ABeeZee");
-  fill('black');
-  textSize(26);
-  text("Main", 44, 51);
-  textSize(28);
-  text("Menu", 38, 75);
+  mainMenuButton();
 
   //Registration heading
   fill('SandyBrown');
