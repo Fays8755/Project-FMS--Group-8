@@ -96,7 +96,7 @@ function draw() {
   else if (state == "game1") { game1() }
   else if (state == "game2") { game2() }
   else if (state == "game3") { game3() }
-  else if (state == "settings") { settings()}
+  else if (state == "settings") {settings()}
   else if (state == "login") {login()}
   else if (state == "registration") {registration()}
   else if (state == "about") {about()}
