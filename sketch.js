@@ -3,7 +3,6 @@ NAVIGATING THROUGH FUNCTIONS
 setup()
 mainMenu() - mainmenu page 
 mainMenuButton() - Button to return to main menu page on game pages, settings, about, and login pages
-draw() - Draw function
 game1() - Game1 page
 game2() - Game2 page
 game3() - Game3 page
@@ -11,6 +10,7 @@ settings() - Settings page
 login() - Login page
 registration() - Registration page
 about() - About page
+draw() - Draw function
 mousePressed() - Commands when mouse is pressed
 */
 
@@ -105,20 +105,6 @@ function mainMenuButton() {
   text("Menu", 38, 75);
 }
 
-let state = "mainMenu";
-
-function draw() {
-  if (state == "mainMenu") { mainMenu(); }
-  else if (state == "game1") { game1() }
-  else if (state == "game2") { game2() }
-  else if (state == "game3") { game3() }
-  else if (state == "settings") {settings()}
-  else if (state == "login") {login()}
-  else if (state == "registration") {registration()}
-  else if (state == "about") {about()}
-  else { background(255); text("ERROR OUCCURRED", 500, 500);}
-}
-
 function game1() {
   background('pink');
 
@@ -189,6 +175,14 @@ function settings() {
 
   //Main menu button
   mainMenuButton();
+  
+  fill('#BBF291');
+  rect(400, 150, 100, 70, 20);
+  textFont('ABeeZee');
+  fill('black');
+  textSize(32);
+  text("Sound", 410, 195);
+  
 }
 
 function login() {
@@ -316,6 +310,28 @@ function about()
   text("Project FMS: Gaming", 300, 400);
 }
 
+let state = "settings";
+
+function draw() {
+  if (state == "mainMenu") { mainMenu();}
+  else if (state == "game1") { game1()}
+  else if (state == "game2") { game2()}
+  else if (state == "game3") { game3()}
+  else if (state == "settings") {settings()}
+  else if (state == "login") {login()}
+  else if (state == "registration") {registration()}
+  else if (state == "about") {about()}
+  else if (state == "playSound") {play()}
+  else { background(255); text("ERROR OUCCURRED", 500, 500);}
+}
+
+var hello;
+
+function play() {
+  hello = new Audio('wrong.mp3');
+  hello.play()
+}
+
 function mousePressed()
 {
   //Main page
@@ -355,10 +371,12 @@ function mousePressed()
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
   }
 
-  //Settings page
+  //Settings page400, 150, 100, 70, 20
   else if (state == "settings") {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+    //Sound button
+    if (mouseX > 400 && mouseX < 500 && mouseY > 150 && mouseY <220) {state = "playSound"}
   }
 
   //Login page
