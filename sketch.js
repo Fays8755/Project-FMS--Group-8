@@ -111,7 +111,6 @@ function game1() {
 
   fill('#BBF291');
   rect(270, 120, 700, 60, 20);
-
   textFont('ABeeZee');
   fill('black');
   textSize(32);
@@ -119,7 +118,6 @@ function game1() {
 
   fill('#BBF291');
   rect(320, 240, 600, 60, 20);
-
   textFont('ABeeZee');
   fill('black');
   textSize(32);
@@ -134,7 +132,6 @@ function game2() {
   
   fill('#BBF291');
   rect(270, 120, 700, 60, 20);
-
   textFont('ABeeZee');
   fill('black');
   textSize(32);
@@ -142,7 +139,6 @@ function game2() {
 
   fill('#BBF291');
   rect(500, 240, 220, 220, 20);
-
   textFont('ABeeZee');
   fill('black');
   textSize(32);
@@ -158,7 +154,6 @@ function game3() {
   
   fill('#BBF291');
   rect(270, 120, 700, 60, 20);
-
   textFont('ABeeZee');
   fill('black');
   textSize(32);
@@ -166,7 +161,6 @@ function game3() {
 
   fill('#BBF291');
   rect(500, 240, 220, 220, 20);
-
   textFont('ABeeZee');
   fill('black');
   textSize(32);
