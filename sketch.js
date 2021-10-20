@@ -1,3 +1,19 @@
+/*
+NAVIGATING THROUGH FUNCTIONS
+setup()
+mainMenu() - mainmenu page 
+mainMenuButton() - Button to return to main menu page on game pages, settings, about, and login pages
+draw() - Draw function
+game1() - Game1 page
+game2() - Game2 page
+game3() - Game3 page
+settings() - Settings page
+login() - Login page
+registration() - Registration page
+about() - About page
+mousePressed() - Commands when mouse is pressed
+*/
+
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
