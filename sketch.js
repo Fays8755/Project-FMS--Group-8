@@ -342,7 +342,8 @@ var hello;
 
 function play() {
   hello = new Audio('wrong.mp3');
-  hello.play()
+  hello.play();
+  state = "settings"
 }
 
 function mousePressed()
