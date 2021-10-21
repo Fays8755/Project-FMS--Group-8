@@ -18,6 +18,19 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
+const sentence = ["Fish and visitors stink after three days", 
+"My wallet is like an onion, opening it make sme cry", 
+"Friends buy you food. Best friends eat your food", 
+"My winodws aren't dirty, my dog is painting", 
+"Every day is a gift, that's why they call it a present", 
+"I love my job only when I am on vacation",
+"Don't give up your dreams so soon, sleep longer", 
+"I'm not lazy, I'm on power saving mode",
+"Never judge a book by its movie",
+"He who wakes up early, yawns all day long"]
+
+
+
 function mainMenu()
 {
   background('pink');
@@ -371,7 +384,7 @@ function mousePressed()
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
   }
 
-  //Settings page400, 150, 100, 70, 20
+  //Settings page 
   else if (state == "settings") {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
