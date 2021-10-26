@@ -20,4 +20,9 @@ function score1() {
     }
     game1Per = (countCorrect1 / sen.length()) * 100;
 }
-j5.game1Per;
+
+function highScore() {
+    j5.game1Per;
+    j5 = createElement('j5', game1Per);
+    j5.position(460, 280);
+}
