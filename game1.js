@@ -14,14 +14,14 @@ const sentences = ["Fish and visitors stink after three days",
   "I love my job only when I am on vacation",
   "Don't give up your dreams so soon, sleep longer", 
   "I'm not lazy, I'm on power saving mode",
-  "Never judge a book by its movie",
+  "If you can’t beat them, arrange to have them beaten",
   "He who wakes up early, yawns all day long"];
 
 function sentence() {
   let t = Math.floor(Math.random() * 10);
   let sen = sentences[t];
-  h5 = createElement('h5', sen);
-  h5.position(460, 280);
+  h5 = createElement('h2', sen);
+  h5.position(360, 250);
 }
 
 var i = 1;
@@ -55,9 +55,9 @@ function callsen() {
 function callin() {
   while (j == 1) {
     input = createInput();
-    input.position(370, 380);
+    input.position(390, 380);
     input.style('color','black');
-    input.size(500, 20);
+    input.size(400, 20);
     j = 2;
   } 
 }
