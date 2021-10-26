@@ -8,6 +8,7 @@ function result1() {
     highScore();
     tryAgainButton();
 }
+var j5;
 var count1;
 var countCorrect1; //amount that matches the sentence length exactly
 var game1Per;
@@ -19,3 +20,4 @@ function score1() {
     }
     game1Per = (countCorrect1 / sen.length()) * 100;
 }
+j5.game1Per;
