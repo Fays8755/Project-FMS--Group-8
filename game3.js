@@ -1,3 +1,7 @@
+function setup() {
+  createCanvas(window.innerWidth, window.innerHeight);
+}
+
 function game3() {
     background('pink');
   
@@ -19,4 +23,14 @@ function game3() {
     text("(Image", 550, 330);
     text("PlaceHolder)", 530, 370);
   }
+
+  function start3() {
+    background('pink');
   
+    //Buttons
+    mainMenuButton();
+    startButton();
+    aboutButton();
+    settingsButton();
+    highScoreButton();
+  } 

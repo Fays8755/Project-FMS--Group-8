@@ -2,7 +2,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
-const sentence = ["Fish and visitors stink after three days", 
+const sentences = ["Fish and visitors stink after three days", 
   "My wallet is like an onion, opening it makes me cry", 
   "Friends buy you food. Best friends eat your food", 
   "My winodws aren't dirty, my dog is painting", 
@@ -13,9 +13,9 @@ const sentence = ["Fish and visitors stink after three days",
   "Never judge a book by its movie",
   "He who wakes up early, yawns all day long"];
 
-function sent() {
+function sentence() {
   let t = Math.floor(Math.random() * 10);
-  let sen = sentence[t];
+  let sen = sentences[t];
   let h5 = createElement('h5', sen);
   h5.position(460, 280);
 }
@@ -23,9 +23,10 @@ function sent() {
 function sentStop() {
   console.log();
 }
-  
-function game1() {
 
+var i = 1;
+
+function game1() {
   background('pink');
 
   //Main menu button
@@ -44,5 +45,20 @@ function game1() {
   fill('black');
   textSize(32);
   text("(Sentence PlaceHolder)", 460, 280);
-  
+
+  while (i == 1) {
+    sentence();
+    i = 2;
+  }
 }
+
+function start1() {
+  background('pink');
+
+  //Buttons
+  mainMenuButton();
+  startButton();
+  aboutButton();
+  settingsButton();
+  highScoreButton();
+} 
