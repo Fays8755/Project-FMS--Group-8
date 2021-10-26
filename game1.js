@@ -40,10 +40,7 @@ function game1() {
   textSize(32);
   text("Type the following sentence:", 440, 160);
 
-  while (i == 1) {
-    sentence();
-    i = 2;
-  }
+  callsen();
 
   while (j == 1) {
     input = createInput();
@@ -52,8 +49,13 @@ function game1() {
     input.size(500, 20);
     j = 2;
   } 
+}
 
-
+function callsen() {
+  while (i == 1) {
+    sentence();
+    i = 2;
+  }
 }
 
 function start1() {
