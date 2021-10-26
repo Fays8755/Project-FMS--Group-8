@@ -38,13 +38,13 @@ function startButton() {
   text("Game", 566, 260);
 }
 
-function highScoreButton() {
+function highScore() {
   fill('orange');
-  rect(509, 330, 180, 80, 20);
+  rect(509, 370, 180, 80, 20);
 
   fill('black');
   textSize(30);
-  text("High Score:", 530, 362);
+  text("High Score:", 530, 402);
 }
 
 function submitButton() {
@@ -53,6 +53,16 @@ function submitButton() {
 
   fill('black');
   textSize(32);
-  text("Submit", 1015, 547)
+  text("Submit", 1015, 549)
+}
+
+function tryAgainButton() {
+  fill('#BBF291');
+  rect(535, 500, 120, 80, 20)
+  
+  fill('black');
+  textSize(30);
+  text("Try", 575, 535);
+  text("Again", 560, 565);
 }
 

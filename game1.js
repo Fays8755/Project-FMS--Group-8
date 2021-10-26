@@ -61,5 +61,5 @@ function start1() {
   startButton();
   aboutButton();
   settingsButton();
-  highScoreButton();
+  highScore();
 } 

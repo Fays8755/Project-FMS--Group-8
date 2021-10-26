@@ -1,24 +1,8 @@
-/*
-NAVIGATING THROUGH FUNCTIONS
-setup()
-mainMenu() - mainmenu page 
-mainMenuButton() - Button to return to main menu page on game pages, settings, about, and login pages
-game1() - Game1 page
-game2() - Game2 page
-game3() - Game3 page
-settings() - Settings page
-login() - Login page
-registration() - Registration page
-about() - About page
-draw() - Draw function
-mousePressed() - Commands when mouse is pressed
-*/
-
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
-let state = "mainMenu";
+let state = "result1";
 
 function draw() {
   if (state == "mainMenu") { mainMenu();}
@@ -28,6 +12,7 @@ function draw() {
   else if (state == "game2") { game2()}
   else if (state == "start3") { start3()}
   else if (state == "game3") { game3()}
+  else if (state == "result1") {result1()}
   else if (state == "settings") {settings()}
   else if (state == "login") {login()}
   else if (state == "registration") {registration()}
@@ -83,6 +68,23 @@ function mousePressed() {
   else if (state == "game1") {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+    //After hitting submit button
+    if (mouseX > 1000 && mouseX < 1120 && mouseY > 500 && mouseY < 580) {state = "result1";}
+  }
+
+  //Game 1 result
+  else if (state == "result1") {
+    let d = dist(mouseX, mouseY, 1100, 555);
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+    //Going to settings page
+    else if (d<60) {
+      if (d<60) {state = "settings";}
+    }
+    //Going to about page
+    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {state = "about";}
+    //Going to game 1 page again
+    else if (mouseX > 535 && mouseX < 655 && mouseY >500 && mouseY < 580) {state = "game1";}
   }
 
   //Game 2 start page

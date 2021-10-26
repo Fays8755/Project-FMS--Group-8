@@ -33,5 +33,5 @@ function game3() {
     startButton();
     aboutButton();
     settingsButton();
-    highScoreButton();
+    highScore();
   } 
