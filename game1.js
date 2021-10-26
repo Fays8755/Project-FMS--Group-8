@@ -31,7 +31,7 @@ function game1() {
   background('pink');
 
   //Buttons
-  mainMenuButton();
+  
   submitButton();
 
   fill('#BBF291');
