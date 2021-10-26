@@ -2,7 +2,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
-let state = "result1";
+let state = "game1";
 
 function draw() {
   if (state == "mainMenu") { mainMenu();}

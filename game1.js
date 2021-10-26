@@ -1,5 +1,8 @@
+var input;
+
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
+  
 }
 
 const sentences = ["Fish and visitors stink after three days", 
@@ -20,11 +23,8 @@ function sentence() {
   h5.position(460, 280);
 }
 
-function sentStop() {
-  console.log();
-}
-
 var i = 1;
+var j = 1;
 
 function game1() {
   background('pink');
@@ -51,6 +51,14 @@ function game1() {
     sentence();
     i = 2;
   }
+
+  while (j == 1) {
+    input = createInput();
+    input.position(370, 380);
+    input.style('color','black');
+    input.size(500, 20);
+    j = 2;
+  } 
 }
 
 function start1() {
