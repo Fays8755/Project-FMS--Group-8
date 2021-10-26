@@ -40,13 +40,6 @@ function game1() {
   textSize(32);
   text("Type the following sentence:", 440, 160);
 
-  fill('#BBF291');
-  rect(320, 240, 600, 60, 20);
-  textFont('ABeeZee');
-  fill('black');
-  textSize(32);
-  text("(Sentence PlaceHolder)", 460, 280);
-
   while (i == 1) {
     sentence();
     i = 2;
@@ -59,6 +52,8 @@ function game1() {
     input.size(500, 20);
     j = 2;
   } 
+
+
 }
 
 function start1() {
@@ -71,3 +66,4 @@ function start1() {
   settingsButton();
   highScore();
 } 
+

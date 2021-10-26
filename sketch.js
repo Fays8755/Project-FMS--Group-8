@@ -2,12 +2,13 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
-let state = "game1";
+let state = "mainMenu";
 
 function draw() {
   if (state == "mainMenu") { mainMenu();}
   else if (state == "start1") { start1()}
   else if (state == "game1") { game1()}
+  else if (state == "about1") {about1()}
   else if (state == "start2") { start1()}
   else if (state == "game2") { game2()}
   else if (state == "start3") { start3()}
@@ -61,7 +62,7 @@ function mousePressed() {
       if (d<60) {state = "settings";}
     }
     //Going to about page
-    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {state = "about";}
+    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {state = "about1";}
   }
 
   //Game 1 Page
@@ -69,8 +70,11 @@ function mousePressed() {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
     //After hitting submit button
-    if (mouseX > 1000 && mouseX < 1120 && mouseY > 500 && mouseY < 580) {state = "result1";}
+    if (mouseX > 1000 && mouseX < 1120 && mouseY > 500 && mouseY < 580) {input.remove();state = "result1";}
   }
+
+  //About 1 Page
+
 
   //Game 1 result
   else if (state == "result1") {
