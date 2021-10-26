@@ -47,3 +47,12 @@ function highScoreButton() {
   text("High Score:", 530, 362);
 }
 
+function submitButton() {
+  fill('SandyBrown');
+  rect(1000, 500, 120, 80, 20);
+
+  fill('black');
+  textSize(32);
+  text("Submit", 1015, 547)
+}
+

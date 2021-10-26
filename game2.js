@@ -5,8 +5,9 @@ function setup() {
 function game2() {
     background('pink');
   
-    //Main menu button
+    //Buttons
     mainMenuButton();
+    submitButton();
     
     fill('#BBF291');
     rect(270, 120, 700, 60, 20);

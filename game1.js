@@ -29,8 +29,9 @@ var i = 1;
 function game1() {
   background('pink');
 
-  //Main menu button
+  //Buttons
   mainMenuButton();
+  submitButton();
 
   fill('#BBF291');
   rect(270, 120, 700, 60, 20);
