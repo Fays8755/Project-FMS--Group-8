@@ -70,7 +70,7 @@ function mousePressed() {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
     //After hitting submit button
-    if (mouseX > 1000 && mouseX < 1120 && mouseY > 500 && mouseY < 580) {state = "result1";input.remove();}
+    if (mouseX > 1000 && mouseX < 1120 && mouseY > 500 && mouseY < 580) {i=1;j=1;state = "result1";h5.remove();input.remove();}
   }
 
   //About 1 Page

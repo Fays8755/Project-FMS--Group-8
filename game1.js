@@ -1,4 +1,5 @@
 var input;
+var h5;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
@@ -19,7 +20,7 @@ const sentences = ["Fish and visitors stink after three days",
 function sentence() {
   let t = Math.floor(Math.random() * 10);
   let sen = sentences[t];
-  let h5 = createElement('h5', sen);
+  h5 = createElement('h5', sen);
   h5.position(460, 280);
 }
 
