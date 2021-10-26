@@ -19,7 +19,6 @@ const sentences = ["Fish and visitors stink after three days",
 function sentence() {
   let t = Math.floor(Math.random() * 10);
   let sen = sentences[t];
-  textSize(32);
   let h5 = createElement('h5', sen);
   h5.position(460, 280);
 }
