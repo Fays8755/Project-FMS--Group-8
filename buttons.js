@@ -38,14 +38,7 @@ function startButton() {
   text("Game", 566, 260);
 }
 
-function highScore() {
-  fill('orange');
-  rect(509, 370, 180, 80, 20);
 
-  fill('black');
-  textSize(30);
-  text("High Score:", 530, 402);
-}
 
 function submitButton() {
   fill('SandyBrown');
