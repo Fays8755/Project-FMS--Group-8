@@ -41,14 +41,7 @@ function game1() {
   text("Type the following sentence:", 440, 160);
 
   callsen();
-
-  while (j == 1) {
-    input = createInput();
-    input.position(370, 380);
-    input.style('color','black');
-    input.size(500, 20);
-    j = 2;
-  } 
+  callin();
 }
 
 function callsen() {
@@ -56,6 +49,16 @@ function callsen() {
     sentence();
     i = 2;
   }
+}
+
+function callin() {
+  while (j == 1) {
+    input = createInput();
+    input.position(370, 380);
+    input.style('color','black');
+    input.size(500, 20);
+    j = 2;
+  } 
 }
 
 function start1() {
