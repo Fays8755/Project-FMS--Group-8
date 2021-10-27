@@ -8,12 +8,12 @@ function draw() {
   if (state == "mainMenu") { mainMenu();}
   else if (state == "start1") { start1()}
   else if (state == "game1") { game1()}
+  else if (state == "result1") {result1()}
   else if (state == "about1") {about1()}
   else if (state == "start2") { start1()}
   else if (state == "game2") { game2()}
   else if (state == "start3") { start3()}
   else if (state == "game3") { game3()}
-  else if (state == "result1") {result1()}
   else if (state == "settings") {settings()}
   else if (state == "login") {login()}
   else if (state == "registration") {registration()}
@@ -74,7 +74,7 @@ function mousePressed() {
   }
 
   //About 1 Page
-
+  
 
   //Game 1 result
   else if (state == "result1") {

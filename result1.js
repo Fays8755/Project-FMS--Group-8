@@ -5,7 +5,6 @@ function result1() {
     mainMenuButton();
     aboutButton();
     settingsButton();
-    highScore1();
+    highScore();
     tryAgainButton();
-    score1();
 }

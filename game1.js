@@ -4,7 +4,6 @@ var sen;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  
 }
 
 const sentences = ["Fish and visitors stink after three days", 
@@ -32,7 +31,6 @@ function game1() {
   background('pink');
 
   //Buttons
-
   submitButton();
 
   fill('#BBF291');
@@ -74,7 +72,7 @@ function start1() {
   highScore();
 } 
 
-var j5;
+/*var j5;
 var count1 = 0; //amount that matches the sentence length exactly
 var game1Per = 0;
 function score1() {
@@ -86,5 +84,5 @@ function score1() {
     game1Per = (count1 / sen.length()) * 100;
     j5 = createElement('h5', game1Per.toString());
     j5.position(460, 280);
-}
+}*/
 
