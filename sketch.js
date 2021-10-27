@@ -70,7 +70,7 @@ function mousePressed() {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
     //After hitting submit button
-    if (mouseX > 1000 && mouseX < 1120 && mouseY > 500 && mouseY < 580) {i=1;j=1;state = "result1";h5.remove();input.remove();}
+    if (mouseX > 1000 && mouseX < 1120 && mouseY > 500 && mouseY < 580) {i1=1;j1=1;state = "result1";h5.remove();input.remove();}
   }
 
   //About 1 Page
@@ -83,15 +83,15 @@ function mousePressed() {
   else if (state == "result1") {
     let d = dist(mouseX, mouseY, 1100, 555);
     //Going to main menu page
-    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {k1=1;state = "mainMenu";disp1.remove();}
     //Going to settings page
     else if (d<60) {
-      if (d<60) {state = "settings";}
+      if (d<60) {k1=1;state = "settings";disp1.remove();}
     }
     //Going to about page
-    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {state = "about1";}
+    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {k1=1;state = "about1";disp1.remove();}
     //Going to game 1 page again
-    else if (mouseX > 535 && mouseX < 655 && mouseY >500 && mouseY < 580) {state = "game1";}
+    else if (mouseX > 535 && mouseX < 655 && mouseY >500 && mouseY < 580) {k1=1;state = "game1";disp1.remove();}
   }
 
   //Game 2 start page

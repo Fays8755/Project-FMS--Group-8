@@ -7,4 +7,5 @@ function result1() {
     settingsButton();
     highScore();
     tryAgainButton();
+    dispScore1();
 }

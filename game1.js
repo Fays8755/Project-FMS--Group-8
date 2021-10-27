@@ -1,6 +1,13 @@
 var input;
 var h5;
 var sen;
+var countCorrect;
+var disp1;
+var game1Per;
+var i1 = 1;
+var j1 = 1;
+var k1 = 1;
+
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
@@ -16,16 +23,6 @@ const sentences = ["Fish and visitors stink after three days",
   "I'm not lazy, I'm on power saving mode",
   "If you can’t beat them, arrange to have them beaten",
   "He who wakes up early, yawns all day long"];
-
-function sentence() {
-  let t = Math.floor(Math.random() * 10);
-  sen = sentences[t];
-  h5 = createElement('h2', sen);
-  h5.position(360, 250);
-}
-
-var i = 1;
-var j = 1;
 
 function game1() {
   background('pink');
@@ -44,21 +41,60 @@ function game1() {
   callin();
 }
 
+function sentence() {
+  let t = Math.floor(Math.random() * 10);
+  sen = sentences[t];
+  h5 = createElement('h2', sen);
+  h5.position(360, 250);
+}
+
 function callsen() {
-  while (i == 1) {
+  while (i1 == 1) {
     sentence();
-    i = 2;
+    i1 = 2;
   }
 }
 
 function callin() {
-  while (j == 1) {
-    input = createInput();
+  while (j1 == 1) {
+    input = createInput('');
     input.position(390, 380);
     input.style('color','black');
     input.size(400, 20);
-    j = 2;
+    j1 = 2;
   } 
+}
+
+function score1() {
+  countCorrect = 0;
+  game1Per = 0;
+  const string = input.value();
+  var l = 0;
+  var m = 0;
+
+  //Counting and storing words of generated sentence in the list
+  var senList1 = sen.split(" ");
+  var sentList1 = sen.split(" ");
+  var inpList1 = string.split(" ");
+  for (l = 0; l < senList1.length; l++) {
+    for (m = 0; m < inpList1.length; m++) {
+      if (inpList1[l] == senList1[m]) {
+        senList1.splice(l,1);
+        countCorrect++;
+      }
+      
+    }
+  }
+  game1Per = Number(((countCorrect / sentList1.length) * 100).toFixed(2));
+  disp1 = createElement('h4', game1Per.toString());
+  disp1.position(460, 200);
+}
+
+function dispScore1() {
+  while (k1 == 1) {
+    score1();
+    k1 = 2;
+  }
 }
 
 function start1() {
@@ -71,18 +107,4 @@ function start1() {
   settingsButton();
   highScore();
 } 
-
-/*var j5;
-var count1 = 0; //amount that matches the sentence length exactly
-var game1Per = 0;
-function score1() {
-    for (i = 0; i < sen.length; i++) {
-        if (sen.charAt(i) == input.charAt(i)) {
-            count1++;
-        }
-    }
-    game1Per = (count1 / sen.length()) * 100;
-    j5 = createElement('h5', game1Per.toString());
-    j5.position(460, 280);
-}*/
 
