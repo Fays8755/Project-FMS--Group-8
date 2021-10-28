@@ -2,7 +2,8 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
-const colors = ['blue', 'red', 'yellow', 'green', 'purple', 'orange', 'black', 'grey', 'white', 'brown'];
+const colors = ['blue', 'red', 'yellow', 'green', 'purple', 
+                'orange', 'black', 'grey', 'white', 'saddlebrown'];
 var col;
 var i2 = 1;
 function game2() {
