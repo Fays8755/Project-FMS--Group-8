@@ -108,7 +108,7 @@ function dispScore1() {
     game1Per.toString();
     dispsc1 = "Your score: " + game1Per;
     disp1 = createElement('h2', dispsc1);
-    disp1.position(535, 280);
+    disp1.position(529, 280);
     k1 = 2;
   }
 }
