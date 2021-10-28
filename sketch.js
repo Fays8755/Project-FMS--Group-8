@@ -10,10 +10,12 @@ function draw() {
   else if (state == "game1") { game1()}
   else if (state == "result1") {result1()}
   else if (state == "about1") {about1()}
-  else if (state == "start2") { start1()}
+  else if (state == "start2") { start2()}
   else if (state == "game2") { game2()}
+  else if (state == "about2") {about2()}
   else if (state == "start3") { start3()}
   else if (state == "game3") { game3()}
+  else if (state == "about3") {about3()}
   else if (state == "settings") {settings()}
   else if (state == "login") {login()}
   else if (state == "registration") {registration()}
@@ -83,15 +85,15 @@ function mousePressed() {
   else if (state == "result1") {
     let d = dist(mouseX, mouseY, 1100, 555);
     //Going to main menu page
-    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {k1=1;state = "mainMenu";disp1.remove();}
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {n1=1;k1=1;state = "mainMenu";disp1.remove();displ1.remove();}
     //Going to settings page
     else if (d<60) {
-      if (d<60) {k1=1;state = "settings";disp1.remove();}
+      if (d<60) {n1=1;k1=1;state = "settings";disp1.remove();displ1.remove();}
     }
     //Going to about page
-    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {k1=1;state = "about1";disp1.remove();}
+    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {n1=1;k1=1;state = "about1";disp1.remove();displ1.remove();}
     //Going to game 1 page again
-    else if (mouseX > 535 && mouseX < 655 && mouseY >500 && mouseY < 580) {k1=1;state = "game1";disp1.remove();}
+    else if (mouseX > 535 && mouseX < 655 && mouseY >500 && mouseY < 580) {n1=1;k1=1;state = "game1";disp1.remove();displ1.remove();}
   }
 
   //Game 2 start page
@@ -106,11 +108,17 @@ function mousePressed() {
       if (d<60) {state = "settings";}
     }
     //Going to about page
-    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {state = "about";}
+    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {state = "about2";}
   }
 
   //Game 2 Page
   else if (state == "game2") {
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+  }
+
+  //About 2 Page
+  else if (state == "about2") {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
   }
@@ -127,11 +135,17 @@ function mousePressed() {
       if (d<60) {state = "settings";}
     }
     //Going to about page
-    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {state = "about";}
+    else if (mouseX > 90 && mouseY > 500 && mouseX < 265 && mouseY < 600) {state = "about3";}
   }
 
   //Game 3 page
   else if (state == "game3") {
+    //Going to main menu page
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+  }
+
+  //About 3 Page
+  else if (state == "about3") {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
   }
