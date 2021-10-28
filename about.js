@@ -17,6 +17,7 @@ function about1() {
   background('pink');
   //main menu button
   mainMenuButton();
+  backButton();
 
   fill('white');
   rect(270, 200, 760, 270, 20);
@@ -32,6 +33,7 @@ function about2() {
   background('pink');
   //main menu button
   mainMenuButton();
+  backButton();
 
   fill('white');
   rect(270, 200, 760, 270, 20);
@@ -47,6 +49,7 @@ function about3() {
   background('pink');
   //main menu button
   mainMenuButton();
+  backButton();
 
   fill('white');
   rect(270, 200, 760, 270, 20);

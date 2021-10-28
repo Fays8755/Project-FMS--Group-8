@@ -67,3 +67,13 @@ function highScore() {
   textSize(30);
   text("High Score:", 530, 402);
 }
+
+function backButton() {
+  fill('lemonChiffon');
+  strokeWeight(1);
+  rect(1080, 20, 100, 70, 20);
+  textFont("ABeeZee");
+  fill('black');
+  textSize(32);
+  text("Back", 1097, 64);
+}
