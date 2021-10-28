@@ -36,6 +36,8 @@ function game2() {
       i2 = 2;
     }
   }
+
+  
   function start2() {
     background('pink');
   
