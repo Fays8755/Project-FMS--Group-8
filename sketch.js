@@ -2,7 +2,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
-let state = "mainMenu";
+let state = "game2";
 
 function draw() {
   if (state == "mainMenu") { mainMenu();}
@@ -116,7 +116,7 @@ function mousePressed() {
   //Game 2 Page
   else if (state == "game2") {
     //Going to main menu page
-    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
+    if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {i2 =  1; state = "mainMenu";}
   }
 
   //About 2 Page

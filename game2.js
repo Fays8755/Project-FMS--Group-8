@@ -2,7 +2,7 @@ function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
 }
 
-const colors = ['blue', 'red', 'yellow', 'green', 'purple', 'orange', 'black', 'grey', 'white', 'pink'];
+const colors = ['blue', 'red', 'yellow', 'green', 'purple', 'orange', 'black', 'grey', 'white', 'brown'];
 var col;
 var i2 = 1;
 function game2() {
@@ -18,10 +18,11 @@ function game2() {
     fill('black');
     textSize(32);
     text("React accordingly to the following images:", 350, 160);
-  
-    fill('#BBF291');
-    rect(500, 240, 220, 220, 20);
 
+    callColor();
+
+    fill(col);
+    rect(500, 240, 220, 220, 20);
     //red, yellow, blue, green, purple, orange, black, grey, white, pink
   }
   
