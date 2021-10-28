@@ -18,11 +18,6 @@ function game2() {
   
     fill('#BBF291');
     rect(500, 240, 220, 220, 20);
-    textFont('ABeeZee');
-    fill('black');
-    textSize(32);
-    text("(Image", 550, 330);
-    text("PlaceHolder)", 530, 370);
   }
   
   function start2() {
