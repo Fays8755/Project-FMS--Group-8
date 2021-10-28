@@ -80,7 +80,7 @@ function mousePressed() {
     //Going to main menu page1080, 20, 100, 70, 20
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
     //Going back to game 1 page
-    if (mouseX > 1080 && mouseX < 1180 && mouseY > 20 & mouseY < 70) {state = "start1";}
+    if (mouseX > 1080 && mouseX < 1180 && mouseY > 20 & mouseY < 90) {state = "start1";}
   }
 
   //Game 1 result
@@ -124,7 +124,7 @@ function mousePressed() {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
     //Going back to game 1 page
-    if (mouseX > 1080 && mouseX < 1180 && mouseY > 20 & mouseY < 70) {state = "start2";}
+    if (mouseX > 1080 && mouseX < 1180 && mouseY > 20 & mouseY < 90) {state = "start2";}
   }
 
   //Game 3 start page
@@ -153,7 +153,7 @@ function mousePressed() {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {state = "mainMenu";}
     //Going back to game 1 page
-    if (mouseX > 1080 && mouseX < 1180 && mouseY > 20 & mouseY < 70) {state = "start3";}
+    if (mouseX > 1080 && mouseX < 1180 && mouseY > 20 & mouseY < 90) {state = "start3";}
   }
 
   //Settings page 
