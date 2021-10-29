@@ -24,15 +24,12 @@ function game2() {
 
     fill(col);
     rect(500, 240, 220, 220, 20);
-    //red, yellow, blue, green, purple, orange, black, grey, white, pink
   }
   
   function callColor() {
     while (i2 == 1) {
-      let t = Math.floor(Math.random() * 10);
-      col = colors[t];
-      fill(col);
-      rect(500, 240, 220, 220, 20);
+      let t1 = Math.floor(Math.random() * 10);
+      col = colors[t1];
       i2 = 2;
     }
   }
