@@ -26,7 +26,7 @@ function about1() {
   textSize(25);
   text("The user will be prompted to type a sentence matching", 300, 300);
   text("the one given to them. If they match the sentence well enough,", 300, 350);
-  text("they will get a higher score.", 300, 400);
+  text("they will get a higher score. Make sure to add spaces where needed.", 300, 400);
 }
 
 function about2() {
