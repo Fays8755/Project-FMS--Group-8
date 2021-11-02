@@ -49,7 +49,11 @@ function game2() {
   fill(col2);
   text(col1, 660, 495);
 
-  
+  if (timerValue < 5) {
+    fill('black');
+    text(floor(timerValue), 200, 200);
+  }
+  setInterval(timer, 800);
 }
   
 function callColor() {
@@ -58,11 +62,6 @@ function callColor() {
     col1 = colors[t1];
     let t2 = Math.floor(Math.random() * 10)
     col2 = colors[t2];
-    if (timerValue < 5) {
-      fill('black');
-      text(floor(timerValue), 200, 200);
-    }
-    setInterval(timer, 800);
     i2++;
   }
 }
