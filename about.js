@@ -1,5 +1,5 @@
 function about() {
-  background('pink');
+  
   //main menu button
   mainMenuButton();
 
@@ -14,7 +14,7 @@ function about() {
 }
 
 function about1() {
-  background('pink');
+  
   //main menu button
   mainMenuButton();
   backButton();
@@ -30,7 +30,7 @@ function about1() {
 }
 
 function about2() {
-  background('pink');
+  
   //main menu button
   mainMenuButton();
   backButton();
@@ -46,7 +46,7 @@ function about2() {
 }
 
 function about3() {
-  background('pink');
+  
   //main menu button
   mainMenuButton();
   backButton();

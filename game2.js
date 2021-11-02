@@ -21,7 +21,7 @@ var i2 = 0;
 var timerValue = 2;
 
 function game2() {
-  background('pink');
+  
 
   //Buttons
   mainMenuButton();

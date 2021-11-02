@@ -9,6 +9,7 @@ var i1 = j1 = k1 = n1 = 1;
 
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
+  background('pink');
 }
 
 const sentences = ["Fish and visitors stink after three days", 
@@ -23,7 +24,7 @@ const sentences = ["Fish and visitors stink after three days",
   "He who wakes up early, yawns all day long"];
 
 function start1() {
-  background('pink');
+  
 
   //Buttons
   mainMenuButton();
@@ -34,7 +35,7 @@ function start1() {
 }
 
 function game1() {
-  background('pink');
+  
 
   //Buttons
   submitButton();
@@ -114,7 +115,7 @@ function dispScore1() {
 }
 
 function result1() {
-  background('pink');
+  
 
   //Buttons
   mainMenuButton();

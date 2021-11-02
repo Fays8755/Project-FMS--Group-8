@@ -1,5 +1,5 @@
 function mainMenu() {
-  background('pink');
+  
   
   //Buttons
   settingsButton();
