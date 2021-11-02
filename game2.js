@@ -1,9 +1,10 @@
 function setup() {
   createCanvas(window.innerWidth, window.innerHeight);
-  background('pink');
+  
 }
 
 function start2() {
+  background('pink');
   
   //Buttons
   mainMenuButton();
