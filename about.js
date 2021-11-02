@@ -40,9 +40,9 @@ function about2() {
 
   fill('black');
   textSize(25);
-  text("The user will be prompted to react to certain images.", 300, 300);
-  text("They will get a higher score if they react to the images", 300, 350);
-  text("that they were prompted to react to.", 300, 400);
+  text("A color will be displayed on the screen and two words will display", 300, 300);
+  text("underneath. The user has to choose the word of the color (if", 300, 350);
+  text("the color blue is displayed, choose the word blue).", 300, 400);
 }
 
 function about3() {
