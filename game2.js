@@ -50,11 +50,14 @@ function game2() {
   fill(col2);
   text(col1, 660, 495);
 
+  
   if (timerValue < 5) {
     fill('black');
     text(floor(timerValue), 200, 200);
   }
   setInterval(timer, 800);
+
+  
 }
   
 function callColor() {
