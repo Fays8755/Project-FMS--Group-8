@@ -58,7 +58,7 @@ function game2() {
 
   if ((mouseX > 440 && mouseX < 560 && mouseY > 450 && mouseY < 520) || 
       (mouseX > 640 && mouseX < 760 && mouseY > 450 && mouseY < 550)) {
-        
+        hi
   }
 }
   
