@@ -55,8 +55,9 @@ function about3() {
   rect(270, 200, 760, 270, 20);
 
   fill('black');
-  textSize(25);
-  text("The user will be prompted to trace an image or symbol", 300, 300);
-  text("on their screen. The more accurate they are in tracing,", 300, 350);
-  text("the higher the score they will get.", 300, 400);
+  textSize(26);
+  text("The user will be prompted to put the cursor inside the center", 300, 250);
+  text("circle on their screen. The circle will then begin to move while", 300, 310);
+  text("the user tries to keep the mouse inside. The longer they go,", 300, 370);
+  text("the higher the score the user will get.", 300, 430);
 }
