@@ -56,8 +56,6 @@ function game2() {
     text(floor(timerValue), 200, 200);
   }
   setInterval(timer, 800);
-
-  
 }
   
 function callColor() {
