@@ -50,6 +50,7 @@ function game2() {
   fill(col2);
   text(col1, 660, 495);
 
+  
   if (timerValue < 5) {
     fill('black');
     text(floor(timerValue), 200, 200);
@@ -58,7 +59,7 @@ function game2() {
 
   if ((mouseX > 440 && mouseX < 560 && mouseY > 450 && mouseY < 520) || 
       (mouseX > 640 && mouseX < 760 && mouseY > 450 && mouseY < 550)) {
-        hi
+        
   }
 }
   
