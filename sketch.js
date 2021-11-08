@@ -3,7 +3,7 @@ function setup() {
 }
 
 let state = "game2";
-
+var jkl2 = 0;
 function draw() {
   if (state == "mainMenu") { mainMenu();}
   else if (state == "start1") { start1()}
@@ -29,7 +29,7 @@ var hello;
 function play() {
   hello = new Audio('wrong.mp3');
   hello.play();
-  state = "settings"
+  state = "settings";
 }
 
 function mousePressed() {
@@ -117,6 +117,12 @@ function mousePressed() {
   else if (state == "game2") {
     //Going to main menu page
     if (mouseX > 20 && mouseX < 110 && mouseY > 20 && mouseY < 90) {i2 =  1; state = "mainMenu";}
+    //Clicking on options for game2
+    else if ((mouseX > 440 && mouseX < 560 && mouseY > 450 && mouseY < 520) || 
+      (mouseX > 640 && mouseX < 760 && mouseY > 450 && mouseY < 550)) {
+          state = "game2";
+            jkl2++;
+      }
   }
 
   //About 2 Page

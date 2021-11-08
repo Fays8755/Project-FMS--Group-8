@@ -56,11 +56,6 @@ function game2() {
     text(floor(timerValue), 200, 200);
   }
   setInterval(timer, 800);
-
-  if ((mouseX > 440 && mouseX < 560 && mouseY > 450 && mouseY < 520) || 
-      (mouseX > 640 && mouseX < 760 && mouseY > 450 && mouseY < 550)) {
-        
-  }
 }
   
 function callColor() {
